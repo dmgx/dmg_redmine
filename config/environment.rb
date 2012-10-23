@@ -9,6 +9,6 @@ if Dir.glob(File.join(vendor_plugins_dir, "*")).any?
     "Redmine directory (#{File.join(Rails.root, "plugins")})"
   #exit 1
 end
-
+config.action_controller.session = { :key => "_dmgx-pm_session", :secret => "faklhdfaljfdhalfh&^%sadhkash9*(&&^%jksdhay(&(yh)))" }
 # Initialize the rails application
 RedmineApp::Application.initialize!
