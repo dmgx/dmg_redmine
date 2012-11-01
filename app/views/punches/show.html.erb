@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>In:</b>
+  <%= @punch.in %>
+</p>
+
+<p>
+  <b>Out:</b>
+  <%= @punch.out %>
+</p>
+
+<p>
+  <b>User:</b>
+  <%= @punch.user_id %>
+</p>
+
+<p>
+  <b>Project:</b>
+  <%= @punch.project_id %>
+</p>
+
+<p>
+  <b>Issue:</b>
+  <%= @punch.issue_id %>
+</p>
+
+<p>
+  <b>Note:</b>
+  <%= @punch.note %>
+</p>
+
+
+<%= link_to 'Edit', edit_punch_path(@punch) %> |
+<%= link_to 'Back', punches_path %>

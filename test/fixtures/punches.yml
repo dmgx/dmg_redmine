@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  in: 2012-11-01 13:24:01
+  out: 2012-11-01 13:24:01
+  user_id: 1
+  project_id: 1
+  issue_id: 1
+  note: MyText
+
+two:
+  in: 2012-11-01 13:24:01
+  out: 2012-11-01 13:24:01
+  user_id: 1
+  project_id: 1
+  issue_id: 1
+  note: MyText

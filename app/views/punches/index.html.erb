@@ -1,0 +1,33 @@
+<h1>Listing punches</h1>
+
+<table>
+  <tr>
+    <th>In</th>
+    <th>Out</th>
+    <th>User</th>
+    <th>Project</th>
+    <th>Issue</th>
+    <th>Note</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @punches.each do |punch| %>
+  <tr>
+    <td><%= punch.in %></td>
+    <td><%= punch.out %></td>
+    <td><%= punch.user_id %></td>
+    <td><%= punch.project_id %></td>
+    <td><%= punch.issue_id %></td>
+    <td><%= punch.note %></td>
+    <td><%= link_to 'Show', punch %></td>
+    <td><%= link_to 'Edit', edit_punch_path(punch) %></td>
+    <td><%= link_to 'Destroy', punch, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Punch', new_punch_path %>

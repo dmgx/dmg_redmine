@@ -599,3 +599,12 @@ function addFormObserversForDoubleSubmit() {
 
 $(document).ready(hideOnLoad);
 $(document).ready(addFormObserversForDoubleSubmit);
+$(function(){
+	$('.contextual .punchButton').click(function(){
+		if($(this).data("inout") == "in") {
+			$(this).attr('data-inout','out');
+		} else {
+			$(this).attr('data-inout','in');
+		}
+	});
+});

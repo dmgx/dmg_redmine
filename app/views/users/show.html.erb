@@ -1,5 +1,6 @@
 <div class="contextual">
 <%= link_to(l(:button_edit), edit_user_path(@user), :class => 'icon icon-edit') if User.current.admin? %>
+<button type="button" class="punchButton" data-user="<%= @user.id %>" data-inout="in">In/Out</button>
 </div>
 
 <h2><%= avatar @user, :size => "50" %> <%=h @user.name %></h2>
