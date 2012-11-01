@@ -1,5 +1,5 @@
 source 'http://rubygems.org'
-ruby '1.9.3-p125'
+ruby '1.9.3'
 
 gem 'rails', '3.2.8'
 gem "jquery-rails", "~> 2.0.2"
@@ -40,8 +40,4 @@ group :test do
   # Shoulda does not work nice on Ruby 1.9.3 and seems to need test-unit explicitely.
   gem "test-unit", :platforms => [:mri_19]
   gem "mocha", "0.12.3"
-end
-
-# Load plugins' Gemfiles
-  instance_eval File.read(file)
 end
