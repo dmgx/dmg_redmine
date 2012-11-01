@@ -42,11 +42,6 @@ group :test do
   gem "mocha", "0.12.3"
 end
 
-local_gemfile = File.join(File.dirname(__FILE__), "Gemfile.local")
-if File.exists?(local_gemfile)
-  instance_eval File.read(local_gemfile)
-end
-
 # Load plugins' Gemfiles
   instance_eval File.read(file)
 end
